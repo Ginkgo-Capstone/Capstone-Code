@@ -1,24 +1,33 @@
 ## Nov 5th 2019
 ## Let's Run AERMOD
 
-#while true   ##should run infinitely
+#while true                                          ##should run infinitely
 
-import xlwt  ##allows python to work with excel
+  import xlwt                                        ##allows python to work with excel
 
-import datetime
-date_time_now = datetime.datetime.now()   ##current date and time
-hour_now = date_time_now.hour             ##pulls hour from date_time_now - to be used as index for for loop
+  import datetime
+  date_time_now = datetime.datetime.now()            ##current date and time
+  hour_now = date_time_now.hour                      ##pulls hour from date_time_now - to be used as index for for loop
 
-for hour_now =/= hour_prev_run
+  for hour_now != hour_prev_run:                     ## i.e will run every new hour
 
-  import os
-  import subprocess
+    import os
+    import subprocess
+   
 
-  os.chdir("C:/Users/Alex/Documents/Capstone Macaroni/PCLI AERMOD FILES")  ##directory needs to be made to a general link
+    os.chdir("C:/Users/Alex/Documents/Capstone Macaroni/PCLI AERMOD FILES")  ##directory needs to be made into a general link
 
-  command = "AERMOD"
-  subprocess.Popen(command)
+    command = "AERMOD"
+    subprocess.Popen(command)
+  
+  ##pull from the .out that AERMOD spits out the data that we care about and save to easy to process excel 
+  ##want to be able to save results iteratively so create directory inside of for loop that will save to the line after the previous
+  ## use date_time_now as identification column in excel
 
-  AERMOD_output = book.add_sheet("AERMOD outputs") ##saves outputs to Excel for the time stamp. Not done yet
+    AERMOD_output = book.add_sheet("AERMOD outputs")  ##saves outputs to Excel for the time stamp. Not done yet
+ 
+    hour_prev_run = hour_now                          ##step back index
+  end
 
+#end
 
