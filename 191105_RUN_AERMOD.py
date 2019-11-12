@@ -7,9 +7,9 @@
 
   import datetime
   date_time_now = datetime.datetime.now()            ##current date and time
-  hour_now = date_time_now.hour                      ##pulls hour from date_time_now - to be used as index for for loop
+  min_now = date_time_now.minute                     ##pulls minute from date_time_now - to be used as index for for loop
 
-  for hour_now != hour_prev_run:                     ## i.e will run every new hour
+  for min_now != min_prev_run:                     ## i.e will run every new minute
 
     import os
     import subprocess
@@ -26,7 +26,7 @@
 
     AERMOD_output = book.add_sheet("AERMOD outputs")  ##saves outputs to Excel for the time stamp. Not done yet
  
-    hour_prev_run = hour_now                          ##step back index
+    min_prev_run = min_now                          ##step back index
   end
 
 #end
