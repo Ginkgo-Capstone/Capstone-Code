@@ -1,0 +1,18 @@
+  
+    ************ Error Message List *************
+  
+    PW     --- Pathway                           
+    Code   --- Error Type + Error Code           
+    L#     --- The Line Number Where Error Occurs
+    ModNam --- Module Name In Which Error Occurs 
+    Hints  --- Hints For The Possible Solution   
+    *********************************************
+  
+PW CODE    L#      MODNAM                       ERROR MESSAGES                      HINTS
+-- ---- ------- ------------- -------------------------------------------------- ------------
+  
+ME W187    8197       MEOPEN: ADJ_U* Option for Stable Low Winds used in AERMET              
+MX W488       1       METEXT: First met HR.ne.1; ST results may not be valid      for 1st Day
+CN W305       1       WAKFLG: Stack height > or = EPA formula height for SRCID:         07PH3
+CN W305       1       WAKFLG: Stack height > or = EPA formula height for SRCID:         07PH5
+CN W305       1       WAKFLG: Stack height > or = EPA formula height for SRCID:        16H501
