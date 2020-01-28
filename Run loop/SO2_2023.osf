@@ -1,0 +1,494 @@
+ *** AERMOD - VERSION  19191 ***   *** Petro Canada Lubricants, Mississauga                                 ***        01/27/20
+ *** AERMET - VERSION  16216 ***   *** SO2 2023 Compliance Modelling                                        ***        17:03:38
+                                                                                                                       PAGE   1
+ *** MODELOPTs:    CONC  ELEV  FLGPOL  NODRYDPLT  NOWETDPLT  RURAL  ADJ_U*
+
+                                            ***     MODEL SETUP OPTIONS SUMMARY       ***
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+ **Model Is Setup For Calculation of Average CONCentration Values.
+  
+   --  DEPOSITION LOGIC  --
+ **NO GAS DEPOSITION Data Provided.
+ **NO PARTICLE DEPOSITION Data Provided.
+ **Model Uses NO DRY DEPLETION.  DRYDPLT  =  F
+ **Model Uses NO WET DEPLETION.  WETDPLT  =  F
+  
+ **Model Uses RURAL Dispersion Only.
+  
+ **Model Allows User-Specified Options:
+         1. Stack-tip Downwash.
+         2. Model Accounts for ELEVated Terrain Effects.
+         3. Use Calms Processing Routine.
+         4. Use Missing Data Processing Routine.
+         5. No Exponential Decay.
+         6. Option for Capped & Horiz Stacks Selected With:
+  
+                 1 Capped Stack(s); and      0 Horizontal Stack(s)
+  
+ **Other Options Specified:
+         ADJ_U*   - Use ADJ_U* option for SBL in AERMET
+         CCVR_Sub - Meteorological data includes CCVR substitutions
+         TEMP_Sub - Meteorological data includes TEMP substitutions
+  
+ **Model Accepts FLAGPOLE Receptor Heights.
+  
+ **The User Specified a Pollutant Type of:  SULPHUR 
+  
+ **Model Calculates  2 Short Term Average(s) of:   1-HR   2-HR
+     and Calculates PERIOD Averages
+  
+ **This Run Includes:     15 Source(s);      16 Source Group(s); and    7548 Receptor(s)
+
+                with:     15 POINT(s), including
+                           1 POINTCAP(s) and      0 POINTHOR(s)
+                 and:      0 VOLUME source(s)
+                 and:      0 AREA type source(s)
+                 and:      0 LINE source(s)
+                 and:      0 RLINE/RLINEXT source(s)
+                 and:      0 OPENPIT source(s)
+                 and:      0 BUOYANT LINE source(s) with      0 line(s)
+
+  
+ **Model Set To Continue RUNning After the Setup Testing.
+
+ **The AERMET Input Meteorological Data Version Date:  16216
+  
+ **Output Options Selected:
+          Model Outputs Tables of PERIOD Averages by Receptor
+          Model Outputs Tables of Highest Short Term Values by Receptor (RECTABLE Keyword)
+          Model Outputs Separate Summary File of High Ranked Values (SUMMFILE Keyword)
+  
+ **NOTE:  The Following Flags May Appear Following CONC Values:  c for Calm Hours
+                                                                 m for Missing Hours
+                                                                 b for Both Calm and Missing Hours
+  
+ **Misc. Inputs:  Base Elev. for Pot. Temp. Profile (m MSL) =   173.00 ;  Decay Coef. =    0.000     ;  Rot. Angle =     0.0
+                  Emission Units = GRAMS/SEC                                ;  Emission Rate Unit Factor =   0.10000E+07
+                  Output Units   = MICROGRAMS/M**3                         
+  
+ **Approximate Storage Requirements of Model =     11.9 MB of RAM.
+  
+ **Input Runstream File:          aermod.inp                                                                                      
+ **Output Print File:             aermod.out                                                                                      
+
+ **File for Saving Result Arrays: SO2_2023.sv1                                                                                    
+ **Detailed Error/Message File:   SO2_2023.err                                                                                    
+ **File for Summary of Results:   SO2_2023.osf                                                                                    
+ *** AERMOD - VERSION  19191 ***   *** Petro Canada Lubricants, Mississauga                                 ***        01/27/20
+ *** AERMET - VERSION  16216 ***   *** SO2 2023 Compliance Modelling                                        ***        17:03:38
+                                                                                                                       PAGE   2
+ *** MODELOPTs:    CONC  ELEV  FLGPOL  NODRYDPLT  NOWETDPLT  RURAL  ADJ_U*
+
+                                            *** METEOROLOGICAL DAYS SELECTED FOR PROCESSING ***
+                                                               (1=YES; 0=NO)
+
+            1 1 1 1 1 1 1 1 1 1   1 1 1 1 1 1 1 1 1 1   1 1 1 1 1 1 1 1 1 1   1 1 1 1 1 1 1 1 1 1   1 1 1 1 1 1 1 1 1 1
+            1 1 1 1 1 1 1 1 1 1   1 1 1 1 1 1 1 1 1 1   1 1 1 1 1 1 1 1 1 1   1 1 1 1 1 1 1 1 1 1   1 1 1 1 1 1 1 1 1 1
+            1 1 1 1 1 1 1 1 1 1   1 1 1 1 1 1 1 1 1 1   1 1 1 1 1 1 1 1 1 1   1 1 1 1 1 1 1 1 1 1   1 1 1 1 1 1 1 1 1 1
+            1 1 1 1 1 1 1 1 1 1   1 1 1 1 1 1 1 1 1 1   1 1 1 1 1 1 1 1 1 1   1 1 1 1 1 1 1 1 1 1   1 1 1 1 1 1 1 1 1 1
+            1 1 1 1 1 1 1 1 1 1   1 1 1 1 1 1 1 1 1 1   1 1 1 1 1 1 1 1 1 1   1 1 1 1 1 1 1 1 1 1   1 1 1 1 1 1 1 1 1 1
+            1 1 1 1 1 1 1 1 1 1   1 1 1 1 1 1 1 1 1 1   1 1 1 1 1 1 1 1 1 1   1 1 1 1 1 1 1 1 1 1   1 1 1 1 1 1 1 1 1 1
+            1 1 1 1 1 1 1 1 1 1   1 1 1 1 1 1 1 1 1 1   1 1 1 1 1 1 1 1 1 1   1 1 1 1 1 1 1 1 1 1   1 1 1 1 1 1 1 1 1 1
+            1 1 1 1 1 1 1 1 1 1   1 1 1 1 1
+
+                NOTE:  METEOROLOGICAL DATA ACTUALLY PROCESSED WILL ALSO DEPEND ON WHAT IS INCLUDED IN THE DATA FILE.
+
+
+
+                                  *** UPPER BOUND OF FIRST THROUGH FIFTH WIND SPEED CATEGORIES ***
+                                                            (METERS/SEC)
+
+                                                 1.54,   3.09,   5.14,   8.23,  10.80,
+ *** AERMOD - VERSION  19191 ***   *** Petro Canada Lubricants, Mississauga                                 ***        01/27/20
+ *** AERMET - VERSION  16216 ***   *** SO2 2023 Compliance Modelling                                        ***        17:03:38
+                                                                                                                       PAGE   3
+ *** MODELOPTs:    CONC  ELEV  FLGPOL  NODRYDPLT  NOWETDPLT  RURAL  ADJ_U*
+
+                                    *** UP TO THE FIRST 24 HOURS OF METEOROLOGICAL DATA ***
+
+   Surface file:   PetroCanadaLubricants_Mississauga_16216.SFC                                        Met Version:  16216
+   Profile file:   PetroCanadaLubricants_Mississauga_16216.PFL                                     
+   Surface format: FREE                                                                                                     
+   Profile format: FREE                                                                                                     
+   Surface station no.:    61587                  Upper air station no.:    14733
+                  Name: TORONTO                                    Name: BUFFALO/GREATER_BUFFALO_INT'L           
+                  Year:   2005                                     Year:   2005
+
+ First 24 hours of scalar data
+ YR MO DY JDY HR     H0     U*     W*  DT/DZ ZICNV ZIMCH  M-O LEN    Z0  BOWEN ALBEDO  REF WS   WD     HT  REF TA     HT
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+ 05 01 01   1 10  -18.7  0.553 -9.000 -9.000 -999. 1220.    806.8  0.16   0.22   0.43    5.70  351.   10.0  274.2    2.0
+
+
+ First hour of profile data
+ YR MO DY HR HEIGHT F  WDIR    WSPD AMB_TMP sigmaA  sigmaW  sigmaV
+ 05 01 01 10   10.0 1  351.    5.70   274.3   99.0  -99.00  -99.00
+
+ F indicates top of profile (=1) or below (=0)
+ *** AERMOD - VERSION  19191 ***   *** Petro Canada Lubricants, Mississauga                                 ***        01/27/20
+ *** AERMET - VERSION  16216 ***   *** SO2 2023 Compliance Modelling                                        ***        17:03:38
+                                                                                                                       PAGE   4
+ *** MODELOPTs:    CONC  ELEV  FLGPOL  NODRYDPLT  NOWETDPLT  RURAL  ADJ_U*
+
+                                        *** THE SUMMARY OF MAXIMUM PERIOD (     1 HRS) RESULTS ***
+
+
+                                    ** CONC OF SULPHUR  IN MICROGRAMS/M**3                          **
+
+                                                                                                             NETWORK
+GROUP ID                       AVERAGE CONC                RECEPTOR  (XR, YR, ZELEV, ZHILL, ZFLAG)  OF TYPE  GRID-ID
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+07PH1     1ST HIGHEST VALUE IS       0.02031 AT (  612321.22,  4815476.84,    74.98,    74.98,    0.00)  DC          
+          2ND HIGHEST VALUE IS       0.00270 AT (  612296.10,  4816681.70,    77.29,    77.29,    0.00)  DC          
+          3RD HIGHEST VALUE IS       0.00219 AT (  612288.29,  4816687.77,    77.97,    77.97,    0.00)  DC          
+          4TH HIGHEST VALUE IS       0.00199 AT (  612281.22,  4816676.84,    77.34,    77.34,    0.00)  DC          
+          5TH HIGHEST VALUE IS       0.00180 AT (  612280.47,  4816693.84,    78.43,    78.43,    0.00)  DC          
+          6TH HIGHEST VALUE IS       0.00180 AT (  612280.47,  4816693.84,    78.43,    78.43,    0.00)  DC          
+          7TH HIGHEST VALUE IS       0.00151 AT (  612272.66,  4816699.91,    78.69,    78.69,    0.00)  DC          
+          8TH HIGHEST VALUE IS       0.00139 AT (  612261.22,  4816676.84,    78.08,    78.08,    0.00)  DC          
+          9TH HIGHEST VALUE IS       0.00130 AT (  612264.85,  4816705.98,    78.89,    78.89,    0.00)  DC          
+         10TH HIGHEST VALUE IS       0.00128 AT (  612261.22,  4816696.84,    78.69,    78.69,    0.00)  DC          
+
+07PH2     1ST HIGHEST VALUE IS       0.01111 AT (  612321.22,  4815476.84,    74.98,    74.98,    0.00)  DC          
+          2ND HIGHEST VALUE IS       0.00178 AT (  612296.10,  4816681.70,    77.29,    77.29,    0.00)  DC          
+          3RD HIGHEST VALUE IS       0.00144 AT (  612288.29,  4816687.77,    77.97,    77.97,    0.00)  DC          
+          4TH HIGHEST VALUE IS       0.00130 AT (  612281.22,  4816676.84,    77.34,    77.34,    0.00)  DC          
+          5TH HIGHEST VALUE IS       0.00117 AT (  612280.47,  4816693.84,    78.43,    78.43,    0.00)  DC          
+          6TH HIGHEST VALUE IS       0.00117 AT (  612280.47,  4816693.84,    78.43,    78.43,    0.00)  DC          
+          7TH HIGHEST VALUE IS       0.00097 AT (  612272.66,  4816699.91,    78.69,    78.69,    0.00)  DC          
+          8TH HIGHEST VALUE IS       0.00089 AT (  612261.22,  4816676.84,    78.08,    78.08,    0.00)  DC          
+          9TH HIGHEST VALUE IS       0.00082 AT (  612264.85,  4816705.98,    78.89,    78.89,    0.00)  DC          
+         10TH HIGHEST VALUE IS       0.00081 AT (  612261.22,  4816696.84,    78.69,    78.69,    0.00)  DC          
+
+07PH3     1ST HIGHEST VALUE IS       0.04205 AT (  612321.22,  4815476.84,    74.98,    74.98,    0.00)  DC          
+          2ND HIGHEST VALUE IS       0.00092 AT (  612021.22,  4815876.84,    77.32,    77.32,    0.00)  DC          
+          3RD HIGHEST VALUE IS       0.00060 AT (  611721.22,  4816276.84,    80.29,    80.29,    0.00)  DC          
+          4TH HIGHEST VALUE IS       0.00060 AT (  611921.22,  4816276.84,    80.56,    80.56,    0.00)  DC          
+          5TH HIGHEST VALUE IS       0.00060 AT (  611821.22,  4816276.84,    80.00,    80.00,    0.00)  DC          
+          6TH HIGHEST VALUE IS       0.00060 AT (  612961.22,  4818496.84,    80.42,    80.42,    0.00)  DC          
+          7TH HIGHEST VALUE IS       0.00060 AT (  612971.22,  4818576.84,    79.85,    79.85,    0.00)  DC          
+          8TH HIGHEST VALUE IS       0.00060 AT (  612981.22,  4818496.84,    80.04,    80.04,    0.00)  DC          
+          9TH HIGHEST VALUE IS       0.00060 AT (  611771.22,  4816376.84,    80.00,    80.00,    0.00)  DC          
+         10TH HIGHEST VALUE IS       0.00060 AT (  612921.22,  4818676.84,    80.60,    80.60,    0.00)  DC          
+
+07PH5     1ST HIGHEST VALUE IS       0.01141 AT (  612321.22,  4815476.84,    74.98,    74.98,    0.00)  DC          
+          2ND HIGHEST VALUE IS       0.00240 AT (  612296.10,  4816681.70,    77.29,    77.29,    0.00)  DC          
+          3RD HIGHEST VALUE IS       0.00194 AT (  612288.29,  4816687.77,    77.97,    77.97,    0.00)  DC          
+          4TH HIGHEST VALUE IS       0.00174 AT (  612281.22,  4816676.84,    77.34,    77.34,    0.00)  DC          
+          5TH HIGHEST VALUE IS       0.00157 AT (  612280.47,  4816693.84,    78.43,    78.43,    0.00)  DC          
+          6TH HIGHEST VALUE IS       0.00157 AT (  612280.47,  4816693.84,    78.43,    78.43,    0.00)  DC          
+          7TH HIGHEST VALUE IS       0.00128 AT (  612272.66,  4816699.91,    78.69,    78.69,    0.00)  DC          
+          8TH HIGHEST VALUE IS       0.00115 AT (  612261.22,  4816676.84,    78.08,    78.08,    0.00)  DC          
+          9TH HIGHEST VALUE IS       0.00106 AT (  612264.85,  4816705.98,    78.89,    78.89,    0.00)  DC          
+         10TH HIGHEST VALUE IS       0.00104 AT (  612261.22,  4816696.84,    78.69,    78.69,    0.00)  DC          
+ *** AERMOD - VERSION  19191 ***   *** Petro Canada Lubricants, Mississauga                                 ***        01/27/20
+ *** AERMET - VERSION  16216 ***   *** SO2 2023 Compliance Modelling                                        ***        17:03:38
+                                                                                                                       PAGE   5
+ *** MODELOPTs:    CONC  ELEV  FLGPOL  NODRYDPLT  NOWETDPLT  RURAL  ADJ_U*
+
+                                        *** THE SUMMARY OF MAXIMUM PERIOD (     1 HRS) RESULTS ***
+
+
+                                    ** CONC OF SULPHUR  IN MICROGRAMS/M**3                          **
+
+                                                                                                             NETWORK
+GROUP ID                       AVERAGE CONC                RECEPTOR  (XR, YR, ZELEV, ZHILL, ZFLAG)  OF TYPE  GRID-ID
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+14H101    1ST HIGHEST VALUE IS       0.00051 AT (  612321.22,  4815476.84,    74.98,    74.98,    0.00)  DC          
+          2ND HIGHEST VALUE IS       0.00007 AT (  612296.10,  4816681.70,    77.29,    77.29,    0.00)  DC          
+          3RD HIGHEST VALUE IS       0.00006 AT (  612288.29,  4816687.77,    77.97,    77.97,    0.00)  DC          
+          4TH HIGHEST VALUE IS       0.00006 AT (  612120.48,  4817071.25,    83.04,    83.04,    0.00)  DC          
+          5TH HIGHEST VALUE IS       0.00006 AT (  612122.97,  4817062.60,    83.00,    83.00,    0.00)  DC          
+          6TH HIGHEST VALUE IS       0.00006 AT (  612125.45,  4817053.95,    83.00,    83.00,    0.00)  DC          
+          7TH HIGHEST VALUE IS       0.00006 AT (  612118.00,  4817079.90,    83.37,    83.37,    0.00)  DC          
+          8TH HIGHEST VALUE IS       0.00006 AT (  612121.22,  4817056.84,    83.00,    83.00,    0.00)  DC          
+          9TH HIGHEST VALUE IS       0.00006 AT (  612127.93,  4817045.30,    83.00,    83.00,    0.00)  DC          
+         10TH HIGHEST VALUE IS       0.00006 AT (  612127.93,  4817045.30,    83.00,    83.00,    0.00)  DC          
+
+14H102    1ST HIGHEST VALUE IS       0.00050 AT (  612321.22,  4815476.84,    74.98,    74.98,    0.00)  DC          
+          2ND HIGHEST VALUE IS       0.00011 AT (  612296.10,  4816681.70,    77.29,    77.29,    0.00)  DC          
+          3RD HIGHEST VALUE IS       0.00010 AT (  612288.29,  4816687.77,    77.97,    77.97,    0.00)  DC          
+          4TH HIGHEST VALUE IS       0.00009 AT (  612281.22,  4816676.84,    77.34,    77.34,    0.00)  DC          
+          5TH HIGHEST VALUE IS       0.00009 AT (  612280.47,  4816693.84,    78.43,    78.43,    0.00)  DC          
+          6TH HIGHEST VALUE IS       0.00009 AT (  612280.47,  4816693.84,    78.43,    78.43,    0.00)  DC          
+          7TH HIGHEST VALUE IS       0.00009 AT (  612120.48,  4817071.25,    83.04,    83.04,    0.00)  DC          
+          8TH HIGHEST VALUE IS       0.00009 AT (  612122.97,  4817062.60,    83.00,    83.00,    0.00)  DC          
+          9TH HIGHEST VALUE IS       0.00009 AT (  612118.00,  4817079.90,    83.37,    83.37,    0.00)  DC          
+         10TH HIGHEST VALUE IS       0.00008 AT (  612125.45,  4817053.95,    83.00,    83.00,    0.00)  DC          
+
+16H501    1ST HIGHEST VALUE IS       0.00917 AT (  612321.22,  4815476.84,    74.98,    74.98,    0.00)  DC          
+          2ND HIGHEST VALUE IS       0.00685 AT (  612296.10,  4816681.70,    77.29,    77.29,    0.00)  DC          
+          3RD HIGHEST VALUE IS       0.00487 AT (  612288.29,  4816687.77,    77.97,    77.97,    0.00)  DC          
+          4TH HIGHEST VALUE IS       0.00404 AT (  612281.22,  4816676.84,    77.34,    77.34,    0.00)  DC          
+          5TH HIGHEST VALUE IS       0.00339 AT (  612280.47,  4816693.84,    78.43,    78.43,    0.00)  DC          
+          6TH HIGHEST VALUE IS       0.00339 AT (  612280.47,  4816693.84,    78.43,    78.43,    0.00)  DC          
+          7TH HIGHEST VALUE IS       0.00234 AT (  612272.66,  4816699.91,    78.69,    78.69,    0.00)  DC          
+          8TH HIGHEST VALUE IS       0.00195 AT (  612261.22,  4816676.84,    78.08,    78.08,    0.00)  DC          
+          9TH HIGHEST VALUE IS       0.00165 AT (  612264.85,  4816705.98,    78.89,    78.89,    0.00)  DC          
+         10TH HIGHEST VALUE IS       0.00160 AT (  612261.22,  4816696.84,    78.69,    78.69,    0.00)  DC          
+
+17SOUTH   1ST HIGHEST VALUE IS       0.02547 AT (  612321.22,  4815476.84,    74.98,    74.98,    0.00)  DC          
+          2ND HIGHEST VALUE IS       0.01370 AT (  611121.22,  4815076.84,    78.98,    78.98,    0.00)  DC          
+          3RD HIGHEST VALUE IS       0.01360 AT (  612521.22,  4819876.84,    79.91,    79.91,    0.00)  DC          
+          4TH HIGHEST VALUE IS       0.01357 AT (  610921.22,  4815276.84,    78.02,    83.00,    0.00)  DC          
+          5TH HIGHEST VALUE IS       0.01357 AT (  612921.22,  4819876.84,    80.02,    85.00,    0.00)  DC          
+          6TH HIGHEST VALUE IS       0.01347 AT (  612921.22,  4820076.84,    77.29,    86.00,    0.00)  DC          
+          7TH HIGHEST VALUE IS       0.01330 AT (  610921.22,  4814876.84,    80.89,    80.89,    0.00)  DC          
+          8TH HIGHEST VALUE IS       0.01330 AT (  612921.22,  4819476.84,    79.52,    79.52,    0.00)  DC          
+          9TH HIGHEST VALUE IS       0.01328 AT (  612921.22,  4819676.84,    75.97,    75.97,    0.00)  DC          
+         10TH HIGHEST VALUE IS       0.01319 AT (  612921.22,  4820276.84,    76.29,    76.29,    0.00)  DC          
+ *** AERMOD - VERSION  19191 ***   *** Petro Canada Lubricants, Mississauga                                 ***        01/27/20
+ *** AERMET - VERSION  16216 ***   *** SO2 2023 Compliance Modelling                                        ***        17:03:38
+                                                                                                                       PAGE   6
+ *** MODELOPTs:    CONC  ELEV  FLGPOL  NODRYDPLT  NOWETDPLT  RURAL  ADJ_U*
+
+                                        *** THE SUMMARY OF MAXIMUM PERIOD (     1 HRS) RESULTS ***
+
+
+                                    ** CONC OF SULPHUR  IN MICROGRAMS/M**3                          **
+
+                                                                                                             NETWORK
+GROUP ID                       AVERAGE CONC                RECEPTOR  (XR, YR, ZELEV, ZHILL, ZFLAG)  OF TYPE  GRID-ID
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+20H100    1ST HIGHEST VALUE IS       0.00029 AT (  612321.22,  4815476.84,    74.98,    74.98,    0.00)  DC          
+          2ND HIGHEST VALUE IS       0.00006 AT (  612296.10,  4816681.70,    77.29,    77.29,    0.00)  DC          
+          3RD HIGHEST VALUE IS       0.00005 AT (  612288.29,  4816687.77,    77.97,    77.97,    0.00)  DC          
+          4TH HIGHEST VALUE IS       0.00005 AT (  612281.22,  4816676.84,    77.34,    77.34,    0.00)  DC          
+          5TH HIGHEST VALUE IS       0.00005 AT (  612280.47,  4816693.84,    78.43,    78.43,    0.00)  DC          
+          6TH HIGHEST VALUE IS       0.00005 AT (  612280.47,  4816693.84,    78.43,    78.43,    0.00)  DC          
+          7TH HIGHEST VALUE IS       0.00004 AT (  612272.66,  4816699.91,    78.69,    78.69,    0.00)  DC          
+          8TH HIGHEST VALUE IS       0.00004 AT (  612920.26,  4817864.11,    74.50,    74.50,    0.00)  DC          
+          9TH HIGHEST VALUE IS       0.00004 AT (  612913.34,  4817871.26,    74.72,    74.72,    0.00)  DC          
+         10TH HIGHEST VALUE IS       0.00004 AT (  612913.34,  4817871.26,    74.72,    74.72,    0.00)  DC          
+
+20H101    1ST HIGHEST VALUE IS       0.00069 AT (  612321.22,  4815476.84,    74.98,    74.98,    0.00)  DC          
+          2ND HIGHEST VALUE IS       0.00018 AT (  612296.10,  4816681.70,    77.29,    77.29,    0.00)  DC          
+          3RD HIGHEST VALUE IS       0.00015 AT (  612288.29,  4816687.77,    77.97,    77.97,    0.00)  DC          
+          4TH HIGHEST VALUE IS       0.00014 AT (  612281.22,  4816676.84,    77.34,    77.34,    0.00)  DC          
+          5TH HIGHEST VALUE IS       0.00013 AT (  612280.47,  4816693.84,    78.43,    78.43,    0.00)  DC          
+          6TH HIGHEST VALUE IS       0.00013 AT (  612280.47,  4816693.84,    78.43,    78.43,    0.00)  DC          
+          7TH HIGHEST VALUE IS       0.00011 AT (  612272.66,  4816699.91,    78.69,    78.69,    0.00)  DC          
+          8TH HIGHEST VALUE IS       0.00010 AT (  612261.22,  4816676.84,    78.08,    78.08,    0.00)  DC          
+          9TH HIGHEST VALUE IS       0.00009 AT (  612264.85,  4816705.98,    78.89,    78.89,    0.00)  DC          
+         10TH HIGHEST VALUE IS       0.00009 AT (  612261.22,  4816696.84,    78.69,    78.69,    0.00)  DC          
+
+20H102    1ST HIGHEST VALUE IS       0.00060 AT (  612321.22,  4815476.84,    74.98,    74.98,    0.00)  DC          
+          2ND HIGHEST VALUE IS       0.00013 AT (  612296.10,  4816681.70,    77.29,    77.29,    0.00)  DC          
+          3RD HIGHEST VALUE IS       0.00011 AT (  612288.29,  4816687.77,    77.97,    77.97,    0.00)  DC          
+          4TH HIGHEST VALUE IS       0.00010 AT (  612281.22,  4816676.84,    77.34,    77.34,    0.00)  DC          
+          5TH HIGHEST VALUE IS       0.00009 AT (  612280.47,  4816693.84,    78.43,    78.43,    0.00)  DC          
+          6TH HIGHEST VALUE IS       0.00009 AT (  612280.47,  4816693.84,    78.43,    78.43,    0.00)  DC          
+          7TH HIGHEST VALUE IS       0.00008 AT (  612272.66,  4816699.91,    78.69,    78.69,    0.00)  DC          
+          8TH HIGHEST VALUE IS       0.00007 AT (  612261.22,  4816676.84,    78.08,    78.08,    0.00)  DC          
+          9TH HIGHEST VALUE IS       0.00007 AT (  612264.85,  4816705.98,    78.89,    78.89,    0.00)  DC          
+         10TH HIGHEST VALUE IS       0.00007 AT (  612261.22,  4816696.84,    78.69,    78.69,    0.00)  DC          
+
+30NORTH   1ST HIGHEST VALUE IS       0.25857 AT (  612321.22,  4815476.84,    74.98,    74.98,    0.00)  DC          
+          2ND HIGHEST VALUE IS       0.01153 AT (  610421.22,  4814376.84,    81.52,    81.52,    0.00)  DC          
+          3RD HIGHEST VALUE IS       0.01153 AT (  609921.22,  4813876.84,    80.29,    80.29,    0.00)  DC          
+          4TH HIGHEST VALUE IS       0.01148 AT (  612921.22,  4821376.84,    78.57,    78.57,    0.00)  DC          
+          5TH HIGHEST VALUE IS       0.01126 AT (  613921.22,  4821876.84,    80.00,    80.00,    0.00)  DC          
+          6TH HIGHEST VALUE IS       0.01113 AT (  612421.22,  4821376.84,    84.97,    91.00,    0.00)  DC          
+          7TH HIGHEST VALUE IS       0.01106 AT (  613421.22,  4821376.84,    72.27,    72.27,    0.00)  DC          
+          8TH HIGHEST VALUE IS       0.01105 AT (  613421.22,  4821876.84,    83.94,    83.94,    0.00)  DC          
+          9TH HIGHEST VALUE IS       0.01097 AT (  612921.22,  4821876.84,    85.00,    85.00,    0.00)  DC          
+         10TH HIGHEST VALUE IS       0.01085 AT (  609921.22,  4814376.84,    87.29,    87.29,    0.00)  DC          
+ *** AERMOD - VERSION  19191 ***   *** Petro Canada Lubricants, Mississauga                                 ***        01/27/20
+ *** AERMET - VERSION  16216 ***   *** SO2 2023 Compliance Modelling                                        ***        17:03:38
+                                                                                                                       PAGE   7
+ *** MODELOPTs:    CONC  ELEV  FLGPOL  NODRYDPLT  NOWETDPLT  RURAL  ADJ_U*
+
+                                        *** THE SUMMARY OF MAXIMUM PERIOD (     1 HRS) RESULTS ***
+
+
+                                    ** CONC OF SULPHUR  IN MICROGRAMS/M**3                          **
+
+                                                                                                             NETWORK
+GROUP ID                       AVERAGE CONC                RECEPTOR  (XR, YR, ZELEV, ZHILL, ZFLAG)  OF TYPE  GRID-ID
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+98ZTOF    1ST HIGHEST VALUE IS       0.01146 AT (  612321.22,  4815476.84,    74.98,    74.98,    0.00)  DC          
+          2ND HIGHEST VALUE IS       0.00218 AT (  612921.22,  4818776.84,    79.88,    79.88,    0.00)  DC          
+          3RD HIGHEST VALUE IS       0.00218 AT (  611871.22,  4816426.84,    79.02,    79.02,    0.00)  DC          
+          4TH HIGHEST VALUE IS       0.00217 AT (  611771.22,  4816376.84,    80.00,    80.00,    0.00)  DC          
+          5TH HIGHEST VALUE IS       0.00217 AT (  612971.22,  4818776.84,    78.79,    78.79,    0.00)  DC          
+          6TH HIGHEST VALUE IS       0.00217 AT (  611821.22,  4816476.84,    80.00,    80.00,    0.00)  DC          
+          7TH HIGHEST VALUE IS       0.00217 AT (  611821.22,  4816276.84,    80.00,    80.00,    0.00)  DC          
+          8TH HIGHEST VALUE IS       0.00217 AT (  612721.22,  4818976.84,    79.90,    79.90,    0.00)  DC          
+          9TH HIGHEST VALUE IS       0.00216 AT (  611921.22,  4816176.84,    78.51,    80.00,    0.00)  DC          
+         10TH HIGHEST VALUE IS       0.00216 AT (  611921.22,  4816376.84,    78.40,    78.40,    0.00)  DC          
+
+HTU_ALL   1ST HIGHEST VALUE IS       0.12229 AT (  612321.22,  4815476.84,    74.98,    74.98,    0.00)  DC          
+          2ND HIGHEST VALUE IS       0.00412 AT (  612021.22,  4815876.84,    77.32,    77.32,    0.00)  DC          
+          3RD HIGHEST VALUE IS       0.00136 AT (  612296.10,  4816681.70,    77.29,    77.29,    0.00)  DC          
+          4TH HIGHEST VALUE IS       0.00088 AT (  611921.22,  4815976.84,    80.14,    80.14,    0.00)  DC          
+          5TH HIGHEST VALUE IS       0.00084 AT (  612281.22,  4816676.84,    77.34,    77.34,    0.00)  DC          
+          6TH HIGHEST VALUE IS       0.00082 AT (  611721.22,  4816376.84,    80.93,    80.93,    0.00)  DC          
+          7TH HIGHEST VALUE IS       0.00082 AT (  611921.22,  4816076.84,    79.73,    81.00,    0.00)  DC          
+          8TH HIGHEST VALUE IS       0.00081 AT (  611821.22,  4816376.84,    81.00,    81.00,    0.00)  DC          
+          9TH HIGHEST VALUE IS       0.00081 AT (  611921.22,  4816276.84,    80.56,    80.56,    0.00)  DC          
+         10TH HIGHEST VALUE IS       0.00081 AT (  611771.22,  4816426.84,    81.00,    81.00,    0.00)  DC          
+
+LP_BOIL   1ST HIGHEST VALUE IS       1.32298 AT (  612217.97,  4816742.41,    80.06,    80.06,    0.00)  DC          
+          2ND HIGHEST VALUE IS       1.31821 AT (  612225.78,  4816736.34,    79.94,    79.94,    0.00)  DC          
+          3RD HIGHEST VALUE IS       1.31821 AT (  612225.78,  4816736.34,    79.94,    79.94,    0.00)  DC          
+          4TH HIGHEST VALUE IS       1.31750 AT (  612210.16,  4816748.48,    80.28,    80.28,    0.00)  DC          
+          5TH HIGHEST VALUE IS       1.31750 AT (  612210.16,  4816748.48,    80.28,    80.28,    0.00)  DC          
+          6TH HIGHEST VALUE IS       1.30896 AT (  612221.22,  4816736.84,    79.96,    79.96,    0.00)  DC          
+          7TH HIGHEST VALUE IS       1.30279 AT (  612233.60,  4816730.27,    79.74,    79.74,    0.00)  DC          
+          8TH HIGHEST VALUE IS       1.30279 AT (  612233.60,  4816730.27,    79.74,    79.74,    0.00)  DC          
+          9TH HIGHEST VALUE IS       1.30132 AT (  612202.35,  4816754.55,    80.62,    80.62,    0.00)  DC          
+         10TH HIGHEST VALUE IS       1.30132 AT (  612202.35,  4816754.55,    80.62,    80.62,    0.00)  DC          
+
+ALL       1ST HIGHEST VALUE IS       1.32764 AT (  612217.97,  4816742.41,    80.06,    80.06,    0.00)  DC          
+          2ND HIGHEST VALUE IS       1.32293 AT (  612225.78,  4816736.34,    79.94,    79.94,    0.00)  DC          
+          3RD HIGHEST VALUE IS       1.32293 AT (  612225.78,  4816736.34,    79.94,    79.94,    0.00)  DC          
+          4TH HIGHEST VALUE IS       1.32211 AT (  612210.16,  4816748.48,    80.28,    80.28,    0.00)  DC          
+          5TH HIGHEST VALUE IS       1.32211 AT (  612210.16,  4816748.48,    80.28,    80.28,    0.00)  DC          
+          6TH HIGHEST VALUE IS       1.31365 AT (  612221.22,  4816736.84,    79.96,    79.96,    0.00)  DC          
+          7TH HIGHEST VALUE IS       1.30764 AT (  612233.60,  4816730.27,    79.74,    79.74,    0.00)  DC          
+          8TH HIGHEST VALUE IS       1.30764 AT (  612233.60,  4816730.27,    79.74,    79.74,    0.00)  DC          
+          9TH HIGHEST VALUE IS       1.30589 AT (  612202.35,  4816754.55,    80.62,    80.62,    0.00)  DC          
+         10TH HIGHEST VALUE IS       1.30589 AT (  612202.35,  4816754.55,    80.62,    80.62,    0.00)  DC          
+
+
+ *** RECEPTOR TYPES:  GC = GRIDCART
+                      GP = GRIDPOLR
+                      DC = DISCCART
+                      DP = DISCPOLR
+ *** AERMOD - VERSION  19191 ***   *** Petro Canada Lubricants, Mississauga                                 ***        01/27/20
+ *** AERMET - VERSION  16216 ***   *** SO2 2023 Compliance Modelling                                        ***        17:03:38
+                                                                                                                       PAGE   8
+ *** MODELOPTs:    CONC  ELEV  FLGPOL  NODRYDPLT  NOWETDPLT  RURAL  ADJ_U*
+
+                                                *** THE SUMMARY OF HIGHEST  1-HR RESULTS ***
+
+
+                                    ** CONC OF SULPHUR  IN MICROGRAMS/M**3                          **
+
+                                                      DATE                                                                    NETWORK
+GROUP ID                          AVERAGE CONC     (YYMMDDHH)             RECEPTOR  (XR, YR, ZELEV, ZHILL, ZFLAG)    OF TYPE  GRID-ID
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+  
+07PH1    HIGH   1ST HIGH VALUE IS       0.02031  ON 05010110: AT (  612321.22,  4815476.84,    74.98,    74.98,    0.00)  DC          
+  
+07PH2    HIGH   1ST HIGH VALUE IS       0.01111  ON 05010110: AT (  612321.22,  4815476.84,    74.98,    74.98,    0.00)  DC          
+  
+07PH3    HIGH   1ST HIGH VALUE IS       0.04205  ON 05010110: AT (  612321.22,  4815476.84,    74.98,    74.98,    0.00)  DC          
+  
+07PH5    HIGH   1ST HIGH VALUE IS       0.01141  ON 05010110: AT (  612321.22,  4815476.84,    74.98,    74.98,    0.00)  DC          
+  
+14H101   HIGH   1ST HIGH VALUE IS       0.00051  ON 05010110: AT (  612321.22,  4815476.84,    74.98,    74.98,    0.00)  DC          
+  
+14H102   HIGH   1ST HIGH VALUE IS       0.00050  ON 05010110: AT (  612321.22,  4815476.84,    74.98,    74.98,    0.00)  DC          
+  
+16H501   HIGH   1ST HIGH VALUE IS       0.00917  ON 05010110: AT (  612321.22,  4815476.84,    74.98,    74.98,    0.00)  DC          
+  
+17SOUTH  HIGH   1ST HIGH VALUE IS       0.02547  ON 05010110: AT (  612321.22,  4815476.84,    74.98,    74.98,    0.00)  DC          
+  
+20H100   HIGH   1ST HIGH VALUE IS       0.00029  ON 05010110: AT (  612321.22,  4815476.84,    74.98,    74.98,    0.00)  DC          
+  
+20H101   HIGH   1ST HIGH VALUE IS       0.00069  ON 05010110: AT (  612321.22,  4815476.84,    74.98,    74.98,    0.00)  DC          
+  
+20H102   HIGH   1ST HIGH VALUE IS       0.00060  ON 05010110: AT (  612321.22,  4815476.84,    74.98,    74.98,    0.00)  DC          
+  
+30NORTH  HIGH   1ST HIGH VALUE IS       0.25857  ON 05010110: AT (  612321.22,  4815476.84,    74.98,    74.98,    0.00)  DC          
+  
+98ZTOF   HIGH   1ST HIGH VALUE IS       0.01146  ON 05010110: AT (  612321.22,  4815476.84,    74.98,    74.98,    0.00)  DC          
+  
+HTU_ALL  HIGH   1ST HIGH VALUE IS       0.12229  ON 05010110: AT (  612321.22,  4815476.84,    74.98,    74.98,    0.00)  DC          
+  
+LP_BOIL  HIGH   1ST HIGH VALUE IS       1.32298  ON 05010110: AT (  612217.97,  4816742.41,    80.06,    80.06,    0.00)  DC          
+  
+ALL      HIGH   1ST HIGH VALUE IS       1.32764  ON 05010110: AT (  612217.97,  4816742.41,    80.06,    80.06,    0.00)  DC          
+
+
+ *** RECEPTOR TYPES:  GC = GRIDCART
+                      GP = GRIDPOLR
+                      DC = DISCCART
+                      DP = DISCPOLR
+ *** AERMOD - VERSION  19191 ***   *** Petro Canada Lubricants, Mississauga                                 ***        01/27/20
+ *** AERMET - VERSION  16216 ***   *** SO2 2023 Compliance Modelling                                        ***        17:03:38
+                                                                                                                       PAGE   9
+ *** MODELOPTs:    CONC  ELEV  FLGPOL  NODRYDPLT  NOWETDPLT  RURAL  ADJ_U*
+
+                                                *** THE SUMMARY OF HIGHEST  2-HR RESULTS ***
+
+
+                                    ** CONC OF SULPHUR  IN MICROGRAMS/M**3                          **
+
+                                                      DATE                                                                    NETWORK
+GROUP ID                          AVERAGE CONC     (YYMMDDHH)             RECEPTOR  (XR, YR, ZELEV, ZHILL, ZFLAG)    OF TYPE  GRID-ID
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+  
+07PH1    HIGH   1ST HIGH VALUE IS       0.02031  ON 05010110: AT (  612321.22,  4815476.84,    74.98,    74.98,    0.00)  DC          
+  
+07PH2    HIGH   1ST HIGH VALUE IS       0.01111  ON 05010110: AT (  612321.22,  4815476.84,    74.98,    74.98,    0.00)  DC          
+  
+07PH3    HIGH   1ST HIGH VALUE IS       0.04205  ON 05010110: AT (  612321.22,  4815476.84,    74.98,    74.98,    0.00)  DC          
+  
+07PH5    HIGH   1ST HIGH VALUE IS       0.01141  ON 05010110: AT (  612321.22,  4815476.84,    74.98,    74.98,    0.00)  DC          
+  
+14H101   HIGH   1ST HIGH VALUE IS       0.00051  ON 05010110: AT (  612321.22,  4815476.84,    74.98,    74.98,    0.00)  DC          
+  
+14H102   HIGH   1ST HIGH VALUE IS       0.00050  ON 05010110: AT (  612321.22,  4815476.84,    74.98,    74.98,    0.00)  DC          
+  
+16H501   HIGH   1ST HIGH VALUE IS       0.00917  ON 05010110: AT (  612321.22,  4815476.84,    74.98,    74.98,    0.00)  DC          
+  
+17SOUTH  HIGH   1ST HIGH VALUE IS       0.02547  ON 05010110: AT (  612321.22,  4815476.84,    74.98,    74.98,    0.00)  DC          
+  
+20H100   HIGH   1ST HIGH VALUE IS       0.00029  ON 05010110: AT (  612321.22,  4815476.84,    74.98,    74.98,    0.00)  DC          
+  
+20H101   HIGH   1ST HIGH VALUE IS       0.00069  ON 05010110: AT (  612321.22,  4815476.84,    74.98,    74.98,    0.00)  DC          
+  
+20H102   HIGH   1ST HIGH VALUE IS       0.00060  ON 05010110: AT (  612321.22,  4815476.84,    74.98,    74.98,    0.00)  DC          
+  
+30NORTH  HIGH   1ST HIGH VALUE IS       0.25857  ON 05010110: AT (  612321.22,  4815476.84,    74.98,    74.98,    0.00)  DC          
+  
+98ZTOF   HIGH   1ST HIGH VALUE IS       0.01146  ON 05010110: AT (  612321.22,  4815476.84,    74.98,    74.98,    0.00)  DC          
+  
+HTU_ALL  HIGH   1ST HIGH VALUE IS       0.12229  ON 05010110: AT (  612321.22,  4815476.84,    74.98,    74.98,    0.00)  DC          
+  
+LP_BOIL  HIGH   1ST HIGH VALUE IS       1.32298  ON 05010110: AT (  612217.97,  4816742.41,    80.06,    80.06,    0.00)  DC          
+  
+ALL      HIGH   1ST HIGH VALUE IS       1.32764  ON 05010110: AT (  612217.97,  4816742.41,    80.06,    80.06,    0.00)  DC          
+
+
+ *** RECEPTOR TYPES:  GC = GRIDCART
+                      GP = GRIDPOLR
+                      DC = DISCCART
+                      DP = DISCPOLR
+ *** AERMOD - VERSION  19191 ***   *** Petro Canada Lubricants, Mississauga                                 ***        01/27/20
+ *** AERMET - VERSION  16216 ***   *** SO2 2023 Compliance Modelling                                        ***        17:03:38
+                                                                                                                       PAGE  10
+ *** MODELOPTs:    CONC  ELEV  FLGPOL  NODRYDPLT  NOWETDPLT  RURAL  ADJ_U*
+
+ *** Message Summary : AERMOD Model Execution ***
+
+  --------- Summary of Total Messages --------
+  
+ A Total of            0 Fatal Error Message(s)
+ A Total of            5 Warning Message(s)
+ A Total of            0 Informational Message(s)
+
+ A Total of            1 Hours Were Processed
+
+ A Total of            0 Calm Hours Identified
+
+ A Total of            0 Missing Hours Identified (  0.00 Percent)
+  
+  
+    ******** FATAL ERROR MESSAGES ******** 
+               ***  NONE  ***         
+  
+  
+    ********   WARNING MESSAGES   ******** 
+ ME W187    8197       MEOPEN: ADJ_U* Option for Stable Low Winds used in AERMET              
+ MX W488       1       METEXT: First met HR.ne.1; ST results may not be valid      for 1st Day
+ CN W305       1       WAKFLG: Stack height > or = EPA formula height for SRCID:         07PH3
+ CN W305       1       WAKFLG: Stack height > or = EPA formula height for SRCID:         07PH5
+ CN W305       1       WAKFLG: Stack height > or = EPA formula height for SRCID:        16H501
