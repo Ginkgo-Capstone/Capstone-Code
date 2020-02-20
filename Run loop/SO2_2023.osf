@@ -1,5 +1,5 @@
  *** AERMOD - VERSION  19191 ***   *** Petro Canada Lubricants, Mississauga                                 ***        01/27/20
- *** AERMET - VERSION  16216 ***   *** SO2 2023 Compliance Modelling                                        ***        17:03:38
+ *** AERMET - VERSION  16216 ***   *** SO2 2023 Compliance Modelling                                        ***        19:50:19
                                                                                                                        PAGE   1
  *** MODELOPTs:    CONC  ELEV  FLGPOL  NODRYDPLT  NOWETDPLT  RURAL  ADJ_U*
 
@@ -76,7 +76,7 @@
  **Detailed Error/Message File:   SO2_2023.err                                                                                    
  **File for Summary of Results:   SO2_2023.osf                                                                                    
  *** AERMOD - VERSION  19191 ***   *** Petro Canada Lubricants, Mississauga                                 ***        01/27/20
- *** AERMET - VERSION  16216 ***   *** SO2 2023 Compliance Modelling                                        ***        17:03:38
+ *** AERMET - VERSION  16216 ***   *** SO2 2023 Compliance Modelling                                        ***        19:50:19
                                                                                                                        PAGE   2
  *** MODELOPTs:    CONC  ELEV  FLGPOL  NODRYDPLT  NOWETDPLT  RURAL  ADJ_U*
 
@@ -101,7 +101,7 @@
 
                                                  1.54,   3.09,   5.14,   8.23,  10.80,
  *** AERMOD - VERSION  19191 ***   *** Petro Canada Lubricants, Mississauga                                 ***        01/27/20
- *** AERMET - VERSION  16216 ***   *** SO2 2023 Compliance Modelling                                        ***        17:03:38
+ *** AERMET - VERSION  16216 ***   *** SO2 2023 Compliance Modelling                                        ***        19:50:19
                                                                                                                        PAGE   3
  *** MODELOPTs:    CONC  ELEV  FLGPOL  NODRYDPLT  NOWETDPLT  RURAL  ADJ_U*
 
@@ -127,7 +127,7 @@
 
  F indicates top of profile (=1) or below (=0)
  *** AERMOD - VERSION  19191 ***   *** Petro Canada Lubricants, Mississauga                                 ***        01/27/20
- *** AERMET - VERSION  16216 ***   *** SO2 2023 Compliance Modelling                                        ***        17:03:38
+ *** AERMET - VERSION  16216 ***   *** SO2 2023 Compliance Modelling                                        ***        19:50:19
                                                                                                                        PAGE   4
  *** MODELOPTs:    CONC  ELEV  FLGPOL  NODRYDPLT  NOWETDPLT  RURAL  ADJ_U*
 
@@ -184,7 +184,7 @@ GROUP ID                       AVERAGE CONC                RECEPTOR  (XR, YR, ZE
           9TH HIGHEST VALUE IS       0.00106 AT (  612264.85,  4816705.98,    78.89,    78.89,    0.00)  DC          
          10TH HIGHEST VALUE IS       0.00104 AT (  612261.22,  4816696.84,    78.69,    78.69,    0.00)  DC          
  *** AERMOD - VERSION  19191 ***   *** Petro Canada Lubricants, Mississauga                                 ***        01/27/20
- *** AERMET - VERSION  16216 ***   *** SO2 2023 Compliance Modelling                                        ***        17:03:38
+ *** AERMET - VERSION  16216 ***   *** SO2 2023 Compliance Modelling                                        ***        19:50:19
                                                                                                                        PAGE   5
  *** MODELOPTs:    CONC  ELEV  FLGPOL  NODRYDPLT  NOWETDPLT  RURAL  ADJ_U*
 
@@ -241,7 +241,7 @@ GROUP ID                       AVERAGE CONC                RECEPTOR  (XR, YR, ZE
           9TH HIGHEST VALUE IS       0.01328 AT (  612921.22,  4819676.84,    75.97,    75.97,    0.00)  DC          
          10TH HIGHEST VALUE IS       0.01319 AT (  612921.22,  4820276.84,    76.29,    76.29,    0.00)  DC          
  *** AERMOD - VERSION  19191 ***   *** Petro Canada Lubricants, Mississauga                                 ***        01/27/20
- *** AERMET - VERSION  16216 ***   *** SO2 2023 Compliance Modelling                                        ***        17:03:38
+ *** AERMET - VERSION  16216 ***   *** SO2 2023 Compliance Modelling                                        ***        19:50:19
                                                                                                                        PAGE   6
  *** MODELOPTs:    CONC  ELEV  FLGPOL  NODRYDPLT  NOWETDPLT  RURAL  ADJ_U*
 
@@ -298,7 +298,7 @@ GROUP ID                       AVERAGE CONC                RECEPTOR  (XR, YR, ZE
           9TH HIGHEST VALUE IS       0.01097 AT (  612921.22,  4821876.84,    85.00,    85.00,    0.00)  DC          
          10TH HIGHEST VALUE IS       0.01085 AT (  609921.22,  4814376.84,    87.29,    87.29,    0.00)  DC          
  *** AERMOD - VERSION  19191 ***   *** Petro Canada Lubricants, Mississauga                                 ***        01/27/20
- *** AERMET - VERSION  16216 ***   *** SO2 2023 Compliance Modelling                                        ***        17:03:38
+ *** AERMET - VERSION  16216 ***   *** SO2 2023 Compliance Modelling                                        ***        19:50:19
                                                                                                                        PAGE   7
  *** MODELOPTs:    CONC  ELEV  FLGPOL  NODRYDPLT  NOWETDPLT  RURAL  ADJ_U*
 
@@ -361,7 +361,7 @@ ALL       1ST HIGHEST VALUE IS       1.32764 AT (  612217.97,  4816742.41,    80
                       DC = DISCCART
                       DP = DISCPOLR
  *** AERMOD - VERSION  19191 ***   *** Petro Canada Lubricants, Mississauga                                 ***        01/27/20
- *** AERMET - VERSION  16216 ***   *** SO2 2023 Compliance Modelling                                        ***        17:03:38
+ *** AERMET - VERSION  16216 ***   *** SO2 2023 Compliance Modelling                                        ***        19:50:19
                                                                                                                        PAGE   8
  *** MODELOPTs:    CONC  ELEV  FLGPOL  NODRYDPLT  NOWETDPLT  RURAL  ADJ_U*
 
@@ -412,7 +412,7 @@ ALL      HIGH   1ST HIGH VALUE IS       1.32764  ON 05010110: AT (  612217.97,  
                       DC = DISCCART
                       DP = DISCPOLR
  *** AERMOD - VERSION  19191 ***   *** Petro Canada Lubricants, Mississauga                                 ***        01/27/20
- *** AERMET - VERSION  16216 ***   *** SO2 2023 Compliance Modelling                                        ***        17:03:38
+ *** AERMET - VERSION  16216 ***   *** SO2 2023 Compliance Modelling                                        ***        19:50:19
                                                                                                                        PAGE   9
  *** MODELOPTs:    CONC  ELEV  FLGPOL  NODRYDPLT  NOWETDPLT  RURAL  ADJ_U*
 
@@ -463,7 +463,7 @@ ALL      HIGH   1ST HIGH VALUE IS       1.32764  ON 05010110: AT (  612217.97,  
                       DC = DISCCART
                       DP = DISCPOLR
  *** AERMOD - VERSION  19191 ***   *** Petro Canada Lubricants, Mississauga                                 ***        01/27/20
- *** AERMET - VERSION  16216 ***   *** SO2 2023 Compliance Modelling                                        ***        17:03:38
+ *** AERMET - VERSION  16216 ***   *** SO2 2023 Compliance Modelling                                        ***        19:50:19
                                                                                                                        PAGE  10
  *** MODELOPTs:    CONC  ELEV  FLGPOL  NODRYDPLT  NOWETDPLT  RURAL  ADJ_U*
 
