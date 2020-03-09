@@ -14,6 +14,7 @@ import math
 from RunAERMOD import RunAERMOD
 from ReadPostFilefun import ReadPostFilefun
 from CreateSubFile2 import CreateSubFile2
+from TexttoExcelfun import TexttoExcelFun
 
 #dir_path = os.path.dirname(os.path.realpath(__file__))
 #dir_path = dir_path + '\Run loop'
